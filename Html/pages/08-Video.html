@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Example</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* Optional: Add a background color to the body */
+        }
+
+        .video-container {
+            display: flex;
+            gap: 50px; /* Adjust the gap as needed */
+            background-color: #fff; /* Background color for the video container */
+            padding: 20px; /* Padding inside the video container */
+            border-radius: 10px; /* Rounded corners for the video container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the video container */
+        }
+
+        video {
+            border: 2px solid #000;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Video Example</h1> -->
+    <div class="video-container">
+        <video src="/pages/VID_20250131_094724674.mp4" autoplay muted controls loop width="450">Sorry
+            you cann't play video...
+        </video>
+
+        <video width="450" autoplay muted loop>
+            <source src="/pages/VID_20250131_094724674.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
+        <iframe width="960" height="615" src="https://www.youtube.com/embed/cl0a3i2wFcc?si=aO1cvt587Vk6E7s8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</body>
+
+</html>
