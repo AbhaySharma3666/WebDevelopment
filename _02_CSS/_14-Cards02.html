@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 360px;
+            height: 500px;
+            background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.1);
+            gap: 25px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 30%;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .textBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2px;
+            text-align: center;
+            gap: 15px;
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        /* Updated Amount Box */
+        #amountBox {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #add8e6;
+            padding: 10px 20px;
+            border-radius: 15px;
+            width: 300px;
+            font-family: Arial, sans-serif;
+        }
+
+        .leftBox {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: linear-gradient(to bottom right, pink, purple);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon::before {
+            content: "♫";
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .textamountBox {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .amount {
+            font-weight: bold;
+        }
+
+        .change {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #paymentbutton {
+            width: 80%;
+            height: 40px;
+            margin: 0 auto;
+            background-color: rgb(7, 31, 59);
+            color: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9), 0 6px 6px rgba(0, 0, 0, 0.23);
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .cancelBox a {
+            text-align: center;
+            text-decoration: none;
+            color: rgb(47, 46, 57);
+            font-weight: bold;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="./image/02.jpg" alt="image 03">
+
+            <div class="textBox">
+                <h2>Order Summary</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat tempore, vel
+                    accusantium quisquam alias autem voluptate? Sint ipsum sequi atque.
+                </p>
+            </div>
+
+            <div id="amountBox">
+                <div class="leftBox">
+                    <div class="icon"></div>
+                    <div class="textamountBox">
+                        <div class="amount">Amount</div>
+                        <div>$99.9/year</div>
+                    </div>
+                </div>
+                <a href="#" class="change">Change</a>
+            </div>
+
+            <button id="paymentbutton">
+                Proceed to Payment
+            </button>
+
+            <div class="cancelBox">
+                <a href="#">Cancel Order</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

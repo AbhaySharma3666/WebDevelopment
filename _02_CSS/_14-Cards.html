@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height:100vh;
+            background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            width: 360px;
+            height: 450px;
+            background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.1);
+            /* margin: 10px; */
+            padding: 20px;
+            gap: 10px;
+        }
+
+        .cards img {
+            height: 500px;
+            border-radius: 10px;
+            
+        }
+
+        .cards img:hover {
+            transform: scale(1.06);
+            transition: transform 0.5s;
+        }
+
+        .cards h2 {
+            font-weight: bold;
+            font-size: 1.6rem;
+        }
+
+        .cards p {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="cards">
+            <img src="./image/01.jpg" alt="Gun Image">
+
+            <h2>AMT AutoMag III</h2>
+
+            <p><b>Manufacturer :</b> Arcadia Machine</p>
+            <p><b>Cartridge :</b> .30 Carbine 9mm Magnum</p>
+            <p><b>Country :</b> United States</p>
+            <p><b>Produced :</b> 1992-2001</p>
+        </div>
+    </div>
+    
+</body>
+</html>
