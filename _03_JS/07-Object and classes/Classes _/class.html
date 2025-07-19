@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class A {
+            show(){
+                document.write("Hello from class A!<br><br>");
+            }
+        }
+        let a = new A(); // Creating an instance of class A and calling the show method
+        a.show();
+
+        class con {
+            constructor(name, age) {
+                document.write("Constructor called!<br>");
+                this.name = name;
+                this.age = age;
+            }
+            display() {
+                document.write("Name: " + this.name + "<br>");
+                document.write("Age: " + this.age + "<br>");
+            }
+        }
+        let person = new con("Abhay", 20); // Creating an instance of class con
+        person.display(); // Calling the display method to show the name and age
+    </script>
+</body>
+</html>
