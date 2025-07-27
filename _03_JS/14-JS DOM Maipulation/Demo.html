@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning DOM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .heading {
+            margin-bottom: 50px;
+        }
+
+        .heading ul {
+            list-style: none;
+            background-color: #9c1010ee;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .heading ul li {
+            display: inline-block;
+        }
+
+        .heading ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .heading ul li a:hover {
+            color: black;
+            font-weight: bold;
+        }
+
+        .main img {
+            width: 35%;
+            margin-left: 15px;
+        }
+
+        .main h1 {
+            text-align: right;
+            float: right;
+            color: blue;
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+        h3 {
+            text-align: center;
+            color: blue;
+            margin-top: 20px;
+            font-size: x-large;
+        }
+
+        .signup {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main">
+        <img src="/JS/14-JS DOM Maipulation/02.jpg" alt="img">
+
+        <h1>Document Object Model.</h1>
+    </div>
+
+    <hr>
+    <h3 id="heading">Registration </h3>
+    <div class="signup">
+        <form action="#" id="myform">
+            <table align="center">
+                <tbody>
+                    <tr>
+                        <td>First Name</td>
+                        <td><input type="text" name="fname"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td><input type="text" name="lname"></td>
+                    </tr>
+                    <tr>
+                        <td>User Name</td>
+                        <td><input type="text" name="uname"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" name="Register"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, reprehenderit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, reprehenderit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, reprehenderit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, reprehenderit!
+        </p>
+    </div>
+
+    <script>
+
+        // var a = document.getElementById("myform").innerHTML; // this innerHTML will return the HTML content of the form
+        // console.log(a);
+
+        // var b = document.getElementById("myform").innerText; // this will return the text content of the form
+        // console.log(b);
+
+        // var Link = document.links; // this will return all the links in the document
+        // console.log(Link);
+
+        // console.log(document.links[2].innerText); // this will return the 3th link in the document
+        
+        // console.log(document.getElementById("heading").attributes); // this will return the text content of the element with id "heading"
+        
+        // console.log(document.getElementsByClassName("container")[0].innerText); // this will return the text content of the first element with class "container"
+        
+        console.log(document.forms[0].innerText); // this will return the value of the first element in the first form
+        
+    </script>
+</body>
+
+</html>

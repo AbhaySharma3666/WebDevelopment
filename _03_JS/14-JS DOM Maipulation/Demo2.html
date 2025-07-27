@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="h1tag">Welcome to js.</h1>
+    <h3 class="h3tag">Click the button to change the color of the text</h3>
+    <input type="button" value="Red" onclick="changeColor('red')">
+    <input type="button" value="Green" onclick="changeColor('green')">
+    <input type="button" value="Blue" onclick="changeColor('blue')">
+
+    <script>
+        function changeColor(color) {
+            const h1 = document.querySelector(".h1tag");
+            const h3 = document.querySelector(".h3tag");
+
+            if(h1.style.color === color) {
+                // If the color is already set, reset it to default
+                h1.style.color = "";
+                h3.innerText = "The color of the text has been reset to default";
+                return;
+            }
+            h1.style.color = color;
+            h3.innerText = `The color of the text is now ${color}`;
+        }
+    </script>
+</body>
+<footer>
+    <p>Made with ❤️ by Abhay</p>
+</html>
