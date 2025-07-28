@@ -1,0 +1,25 @@
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preventing Default Behavior</title>
+</head>
+<body>
+  <a href="https://www.example.com" id="myLink">Click Me</a>
+
+  <script>
+    let link = document.getElementById('myLink');
+
+    function PDF(error){
+        console.log(error)
+        event.preventDefault();
+        alert('Browser Default behavior prevented');
+        link.textContent = "Click Done Bro";
+    }
+
+    link.addEventListener('click', PDF);
+  </script>
+</body>
+</html>
