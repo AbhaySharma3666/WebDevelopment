@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="#">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="password" name="password" placeholder="Enter your password" required>
+            <input type="submit" name="Click Me" onclick="hello()"> 
+        </form>
+    </div>
+    <script>
+        function hello() {
+            var res=confirm("Are you sure you want to proceed?"); // This will show a confirmation dialog.It shows "OK" and "Cancel" buttons.
+            // If the user clicks "OK", the function will return true, otherwise it will return false.
+
+            if (res){
+                alert("You clicked OK!"); // This will show an alert dialog with the message "You clicked OK!".
+            } else {
+                alert("You clicked Cancel!"); // This will show an alert dialog with the message "You clicked Cancel!".
+            }
+        }
+    </script>
+</body>
+</html>
