@@ -1,0 +1,18 @@
+body {
+    border: 5px solid black; /* Green border */
+            
+}
+.container {
+    border: 3px solid black; /* Green border */
+    margin: 15px;
+}
+.nav {
+    background-color: rgb(144, 144, 187); /* Green background */
+    padding: 10px; /* Padding for the navigation bar */
+}
+.nav-link{
+    color:black;
+}
+.nav-link:hover,  .nav-link.actic{
+    background-color: rgb(117, 228, 163); /* Red on hover */
+}
