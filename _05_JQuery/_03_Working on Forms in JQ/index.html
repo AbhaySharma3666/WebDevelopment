@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working on Forms in JQ</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <form id="myform">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required> <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required> <br>
+        <label for="city">City</label>
+        <select name="city" id="city" required>
+            <option value="">Select City</option>
+            <option value="Pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Goa">Goa</option>
+        </select>
+        <br> <br>
+        <input type="submit" class="btn1" value="Click to submit">
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
