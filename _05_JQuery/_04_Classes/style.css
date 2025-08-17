@@ -1,0 +1,17 @@
+body {
+    .mydiv {
+        border: 2px solid black;
+        width: 400px;
+    }
+
+    .changeClassName {
+        color: red;
+        background-color: black;
+    }
+
+    .div2 {
+        border: 3px solid brown;
+        padding: 20px;
+
+    }
+}
