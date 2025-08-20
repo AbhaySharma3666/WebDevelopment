@@ -1,3 +1,7 @@
+/*
+    - object always stores key-value pairs in the curly braces
+*/
+
 let obj = {
 
     firstName : "Mayank",
@@ -11,6 +15,6 @@ let obj = {
 console.log(obj);
 obj.message();
 console.log(typeof(obj));
-
-
-
+console.log(obj.firstName);
+console.log(obj.age);
+console.log(obj.hobbies[0]);
