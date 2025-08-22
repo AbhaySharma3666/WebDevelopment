@@ -5,6 +5,14 @@ console.log('Array after push :',brr);
 
 console.log();
 
+console.log('Length of array :',brr.length);
+
+console.log('Element at index 2 :',brr.at(2));
+
+console.log('Index of Push :',brr.indexOf('Push'));
+
+console.log('last Index of Push :',brr.lastIndexOf('Push'));
+
 brr.pop('love');
 console.log('Array after pop 50 :',brr);
 

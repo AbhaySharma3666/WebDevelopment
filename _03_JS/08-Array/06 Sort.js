@@ -4,13 +4,13 @@ arr1.sort();
 console.log('Array after sort :',arr1);
 
 
-
-
 let arr = [4,54,232,7,45,7,46,73456,453,45,5,4,534,6,76,6];
 
 arr.sort((a, b) => b - a);
 console.log('Array after sort :',arr);
 
+
+console.log('Array reverse :',arr.reverse());
 
 console.log(arr1.indexOf(89)); // return index of element
 

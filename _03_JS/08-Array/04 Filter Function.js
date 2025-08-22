@@ -20,3 +20,12 @@ let greaterThan18 = age.filter(function(value) {
    return value > 18;
 });
 console.log('Array after filter age>18 :',greaterThan18);
+
+console.log();
+
+let marks = [12,23,34,45,67,44,32,4]
+console.log('print through foreach loop :',marks);
+console.log();
+marks.forEach(function(value){
+   console.log(value);
+})
