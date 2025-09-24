@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Universal Selector */
+        * {
+            margin: 6px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Element Selector */
+        h1 {
+            color: red;
+        }
+
+        /* id Selector */
+        #list1 {
+            background: rgb(156, 156, 195);
+        }
+
+        /* class Selector */
+        .li1 {
+            color: rgb(0, 0, 0);
+            list-style: none;
+        }
+
+        /* Group Selector */
+        h1,
+        #list1,
+        .li1 {
+            font-size: larger;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 500px;
+        }
+
+        /* parent-child Selector */
+        div {
+            color: red;
+            background: rgb(109, 111, 109);
+        }
+
+        div>p {
+            color: blue;
+        }
+
+        /* sedon Selector */
+        a {
+            color: black;
+            text-decoration: underline;
+            font-size: 16px;
+            transition: all 0.9s;
+        }
+
+        /* First hover */
+        a:hover {
+            color: red;
+            text-decoration: none;
+            background-color: black;
+            font-size: 20px;
+        }
+
+        /* Reverse hover effect when the user hovers away */
+        a:hover::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            transition: all 0.9s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Type of Selector</h1>
+
+    <ul id="list1" class="li1" ;>
+        <li>Element</li>
+        <li>id</li>
+        <li>class</li>
+        <li>group</li>
+        <br>
+        <li>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quisquam vel
+            molestiae inventore animi odit aliquid aut sint recusandae, cum et rerum, voluptatem
+            nemo voluptates blanditiis velit exercitationem officiis est? Quas quaerat iure eius
+            accusantium repellat esse officia quos, cum ducimus. Ipsum quidem quibusdam earum eum,
+            pariatur nobis eligendi autem?
+        </li>
+    </ul>
+    <div>
+        i am div.
+        <p>I am paragraph of div.</p>
+    </div>
+    <p>I am paragraph outside the div.</p>
+
+    <a href="http://google.com">Google</a>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changing CSS properties in JavaScript</title>
+</head>
+<body>
+     <div id="fdiv" style="background-color: aqua; padding: 2rem;">
+        First Div
+
+        <p id="fpara" class="golu abhay" style="background-color: green; padding: 1rem;">
+            First paragraph inside the first div
+        </p>
+
+        <div id="sdiv" style="background-color: yellow; padding: 1.2rem;">
+            Second Div
+
+            <p id="spara" style="background-color: orange; padding: 0.8rem;">
+                Second paragraph inside the second div
+            </p>
+        </div>
+    </div>
+
+      <Script>
+        //  Methods of changing CSS properties in JavaScript
+        
+        // 1. Style Method: You can directly modify the CSS properties.It is single css inline style.
+
+            let paraElement = document.getElementById("spara"); // getting the style object of the element
+            console.log(paraElement.style);
+
+            paraElement.style.backgroundColor = "blue"; // changing the background color of the element (setting the style property)
+            paraElement.style.color = "white"; // changing the text color of the element (setting the style property)
+
+        // 2. .cssText Method: You can use this method to change the entire CSS text of an element.it is multiple css inline style.
+
+            let secondElement = document.getElementById("sdiv"); // getting the style object of the element
+            console.log(secondElement.style.cssText); // getting the css text of the element
+
+            secondElement.style.cssText = "background-color: black; color: white; padding: 0.5rem;"; // changing the css text of the element (setting the style property)
+
+        // 3. .setAttribute Method: You can use this method to set the entire CSS text of an element.
+
+            let firstElement = document.querySelector("#fdiv"); // getting the style object of the element
+            
+            firstElement.setAttribute("class",divclass); // setting the class of the element
+            console.log(firstElement);
+
+        // 4. .className Method: You can use this method to set the class of an element.
+
+            let fElement = document.querySelector("#fpara"); // getting the style object of the element
+            
+            fElement.className = "Gohan Bulbul"; // setting the class of the element
+            console.log(firstElement);
+
+        // 5. .classList Method: You can use this method to add, remove, or toggle, contains classes of an element.
+
+            let fElement = document.querySelector("#fdiv"); // getting the style object of the element
+            
+            sElement.classList.add("fdivseco fdivthird"); // adding a class to the element
+            sElement.classList.remove("fdiv"); // removing a class from the element
+            sElement.classList.toggle("fdiv"); // toggling a class of the element
+            sElement.classList.contains("fdiv"); // checking if the class is present in the element
+            console.log(sElement.classList); // getting the class list of the element
+      </Script>
+</body>
+</html>

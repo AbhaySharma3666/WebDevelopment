@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle Day Night</title>
+    <style>
+        body {
+            transition: background-color 0.9s, color 0.9s;
+        }
+
+        .night-mode {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Toggle Day/Night Mode</h1>
+        <button id="toggleButton">Toggle Day/Night</button>
+        <p id="status">Current mode: Day</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButton = document.getElementById('toggleButton');
+            const statusText = document.getElementById('status');
+            
+            let isNightMode = false;
+
+            toggleButton.addEventListener('click', function() {
+                isNightMode = !isNightMode;
+
+                if (isNightMode) {
+                    document.body.classList.add('night-mode');
+                    statusText.textContent = 'Current mode: Night';
+                } else {
+                    document.body.classList.remove('night-mode');
+                    statusText.textContent = 'Current mode: Day';
+                }
+            });
+        })
+    </script>
+</body>
+</html>

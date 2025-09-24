@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            
+            background-color:rgb(140, 138, 138);
+            border: 2px solid black;
+            margin: 20px;
+            padding: 50px;
+            width: 80%;
+        }
+        #boxleft{
+            background-color: rgb(171, 200, 39);
+            border: 3px solid black;
+            margin: 5px;
+            padding: 20px;
+            width: 10%;
+            display: flex;
+            flex-direction: column;
+        }
+        #boxright{
+            background-color: rgb(255, 0, 0);
+            border: 3px solid black;
+            margin: 5px;
+            padding: 20px;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p{  
+            font-size: 30px;
+            font-weight: bold;
+            border: 10px solid black;
+            padding: 10px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 640px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="boxleft">
+            <p>Text1</p>
+            <p>Text2</p>
+        </div>
+        <div id="boxright">
+            <img src="./image/06.jpg" alt="image error">
+        </div>
+    </div>
+</body>
+</html>

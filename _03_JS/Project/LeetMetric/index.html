@@ -1,0 +1,43 @@
+<!-- Note : first start proxy server "https://cors-anywhere.herokuapp.com/"
+then run this code in your browser. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetMetric</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>LeetMetric</h1>
+        <div class="user-input-container">
+            <input type="text" id="user-input" placeholder="Enter your LeetCode username">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div class="progress">
+            <div class="circle" id="easy-circle">
+                <div id="easy-label">0/0</div>
+                <small>Easy</small>
+            </div>
+            <div class="circle" id="medium-circle">
+                <div id="medium-label">0/0</div>
+                <small>Medium</small>
+            </div>
+            <div class="circle" id="hard-circle">
+                <div id="hard-label">0/0</div>
+                <small>Hard</small>
+            </div>
+        </div>
+
+        <div class="stats-cards" id="stats-cards"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

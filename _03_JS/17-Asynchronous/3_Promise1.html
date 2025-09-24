@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // let promise = new Promise((resolve, reject) => {
+        //     console.log("I am a promise");
+        //     // resolve("Promise resolved successfully!");
+        //     reject("Promise rejected!");
+        // });
+
+
+        function getStudendRoll(roll) {
+            return new Promise((resolve, reject) => {
+                console.log("Fetching student with roll number: " + roll);
+                setTimeout(() => {
+                    if (roll === 1001 || roll === 1002 || roll === 1003 || roll === 1004) {
+                        console.log("Student found : "+roll);
+                        resolve("Successfully featched student data ");
+                    } else {
+                        reject("Student not found : "+roll);
+                    }
+                }, 2000);
+            });
+        }
+        // let SR = getStudendRoll(1001);
+        // SR.then((res) => {
+        //     console.log("Promise resolved: " + res);
+        // }).catch((err) => {
+        //     console.error("Promise rejected: " + err);
+        // }).finally(() => {
+        //     console.log("Promise handling completed.");
+        // });
+
+        getStudendRoll(1001).then((res) => {
+            getStudendRoll(1002).then((res) => {
+                getStudendRoll(1003).then((res) => {
+                    getStudendRoll(1004).then((res) => {
+                        getStudendRoll(1005).then((res) => {
+                            console.log("Final result: " + res);
+                        }).catch((err) => {
+                            console.error("Error in final promise: " + err);
+                        });
+                        
+                    });
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

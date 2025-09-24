@@ -1,0 +1,74 @@
+
+   What is file Handling ?
+    File handling in Java lets you create, read, write, and delete files—a must-have skill for building real-world applications like loggers, data processors, or configuration managers. Here's a complete overview to get you started:
+
+   📁 Key Classes in java.io Package
+    | Class            | Purpose                            |
+    +------------------+------------------------------------+
+    | File             | Represents file or directory paths |
+    | FileReader       | Reads character files              |
+    | FileWriter       | Writes character files             |
+    | BufferedReader   | Efficient reading of text          |
+    | BufferedWriter   | Efficient writing of text          |
+    | FileInputStream  | Reads binary data                  |
+    | FileOutputStream | Writes binary data                 |
+
+
+
+    🛠️ Common File Operations
+    1. Create a File
+    File file = new File("example.txt");
+    if (file.createNewFile()) {
+        System.out.println("File created: " + file.getName());
+    } else {
+        System.out.println("File already exists.");
+    }
+
+
+    2. Write to a File
+    FileWriter writer = new FileWriter("example.txt");
+    writer.write("Hello, Java File Handling!");
+    writer.close();
+
+
+    3. Read from a File
+    FileReader reader = new FileReader("example.txt");
+    BufferedReader br = new BufferedReader(reader);
+    String line;
+    while ((line = br.readLine()) != null) {
+        System.out.println(line);
+    }
+    br.close();
+
+
+    4. Delete a File
+    File file = new File("example.txt");
+    if (file.delete()) {
+        System.out.println("Deleted the file: " + file.getName());
+    } else {
+        System.out.println("Failed to delete the file.");
+    }
+
+
+
+    🔍 Useful File Class Methods
+    | Method            | Description                |
+    +-------------------+----------------------------+
+    | exists()          | Checks if file exists      |
+    | getName()         | Returns file name          |
+    | getAbsolutePath() | Returns full path          |
+    | length()          | Returns file size in bytes |
+    | canRead()         | Checks if file is readable |
+    | canWrite()        | Checks if file is writable |
+    | delete()          | Deletes the file           |
+
+
+
+
+                              object
+                                |
+                              writer     (Abstract class)
+       |------------------------|------------------------|
+ OutPutStreamWriter      BufferedWriter             PrintWriter
+       |
+    FileWriter

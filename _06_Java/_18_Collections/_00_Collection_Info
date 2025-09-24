@@ -1,0 +1,65 @@
+    Java Collection Framework Overview
+        Java’s Collection Framework provides architecture to store and manipulate data in groups
+         like lists, sets, and maps. It’s housed in the java.util package.
+
+    Core Interfaces Hierarchy
+                                    Iterable (root interface)
+                                          |
+                                      Collection
+               ---------------------------------------------------
+               |                     |                          |
+              List                  Set                        Queue
+           (Ordered)         (Unique Elements)       (FIFO / Priority behavior)
+               |                  |                         |
+           ---------       ----------------          ---------------------
+          |       |       |              |          |                   |
+     ArrayList    LinkedList         HashSet       TreeSet            Deque (Double-ended Queue)
+                                        |                            /     \
+                                    LinkedHashSet            ArrayDeque   LinkedList
+
+
+    List Interface and Implementations
+    | Class      | Description                     | Ordering | Allows Duplicates | Thread-Safe |
+    +------------+---------------------------------+----------+-------------------+-------------+
+    | ArrayList  | Dynamic array                   | Yes      | Yes               | No          |
+    | LinkedList | Doubly-linked list              | Yes      | Yes               | No          |
+    | Vector     | Legacy thread-safe array        | Yes      | Yes               | Yes         |
+    | Stack      | LIFO structure (extends Vector) | Yes      | Yes               | Yes         |
+
+
+
+    🔗 Set Interface and Implementations
+    | Class         | Description                 | Ordering | Allows Duplicates |
+    +---------------+-----------------------------+----------+-------------------+
+    | HashSet       | Hash table based            | No       | No                |
+    | LinkedHashSet | Maintains insertion order   | Yes      | No                |
+    | TreeSet       | Sorted set (Red-Black Tree) | Sorted   | No                |
+
+
+
+    📦 Queue & Deque Interface and Implementations
+    | Class         | Description                       | Ordering       | Use Case     |
+    +---------------+-----------------------------------+----------------+--------------+
+    | PriorityQueue | Min-heap by default               | Priority-based | Scheduling   |
+    | ArrayDeque    | Resizable-array deque             | FIFO or LIFO   | Stack/Queue  |
+    | LinkedList    | Implements both List and Deque    | Flexible       | Multipurpose |
+
+
+
+  Map Interface (Not a Collection, but part of the framework)
+    | Class         | Description               | Ordering  | Allows Duplicate Keys |
+    ---------------------------------------------------------------------------------
+    | HashMap       | Key-value store           | No        | No                    |
+    | LinkedHashMap | Maintains order           | Yes       | No                    |
+    | TreeMap       | Sorted by keys            | Yes       | No                    |
+    | Hashtable     | Legacy synchronized map   | No        | No                    |
+
+
+
+   Notes You’ll Want to Remember
+    - Collection is the root interface for most data structures except Map.
+    - List, Set, Queue are subinterfaces defining unique behavior.
+    - Each implementation varies in performance, ordering, null allowance, and thread safety.
+    - You can use generics (<T>) to enforce type safety.
+    - Newer classes like ArrayList are preferred over legacy ones like Vector unless thread safety is required.
+

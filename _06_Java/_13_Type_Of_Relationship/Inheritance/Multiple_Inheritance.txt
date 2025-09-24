@@ -1,0 +1,57 @@
+
+- java support single level , multi level , hierarchical
+
+    - In single level :->  class _15_Super_Keyword.A (parent)
+                                    |
+                            class _15_Super_Keyword.B  (child)
+
+    - In multi level :->
+            class _15_Super_Keyword.A (parent) -> class _15_Super_Keyword.B -> class _15_Super_Keyword.C -> class D  (child)
+
+    - hierarchical level :->
+                          class _15_Super_Keyword.A (parent)
+              |------------------|---------------------|
+    class _15_Super_Keyword.C (child)      class _15_Super_Keyword.B  (child)     class D (child)
+
+
+- Java not support multiple inheritance
+        Why Java Doesn’t Support Multiple Inheritance (with Classes)
+        Java avoids multiple inheritance to prevent ambiguity and complexity, especially in cases like:
+        🔺 The Diamond Problem
+        Imagine this structure:
+           _15_Super_Keyword.A
+          / \
+         _15_Super_Keyword.B   _15_Super_Keyword.C
+          \ /
+           D
+
+
+        If both _15_Super_Keyword.B and _15_Super_Keyword.C inherit from _15_Super_Keyword.A, and D inherits from both _15_Super_Keyword.B and _15_Super_Keyword.C, then which version of a method from _15_Super_Keyword.A should D inherit? This ambiguity is known as the diamond problem, and Java avoids it by disallowing multiple inheritance with classes.
+
+        ✅ Java’s Solution: Interfaces
+        Java does support multiple inheritance through interfaces. _15_Super_Keyword.A class can implement multiple interfaces, and since interfaces don’t carry state (only method signatures or default methods), ambiguity is easier to resolve.
+        Example:
+        interface Flyable {
+            default void move() {
+                System.out.println("Flying");
+            }
+        }
+
+        interface Swimmable {
+            default void move() {
+                System.out.println("Swimming");
+            }
+        }
+
+        class Duck implements Flyable, Swimmable {
+            public void move() {
+                // Resolving ambiguity
+                Flyable.super.move();
+                Swimmable.super.move();
+                System.out.println("Duck can both fly and swim.");
+            }
+        }
+         Output:
+        Flying
+        Swimming
+        Duck can both fly and swim.

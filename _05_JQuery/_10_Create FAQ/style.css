@@ -1,0 +1,19 @@
+body{
+    margin: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.faq {
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.faq h3 {
+    cursor: pointer;
+    color: green;
+}
+
+.faq p {
+    display: none;
+}
