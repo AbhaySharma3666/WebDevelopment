@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -82,3 +83,89 @@
   <script src="script.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Registration Form</h2>
+    <form id="regForm" action="" method="post">
+      
+      <div class="form-group">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter first name" >
+        <span class="error" id="fnameError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter last name" >
+        <span class="error" id="lnameError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter email" >
+        <span class="error" id="emailError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" >
+        <span class="error" id="passwordError"></span>
+      </div>
+
+      <div class="form-group">
+        <label>Gender</label>
+        <div class="options">
+          <label><input type="radio" name="gender" value="male" > Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+          <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+        <span class="error" id="genderError"></span>
+      </div>
+
+      <div class="form-group">
+        <label>Skills</label>
+        <div class="options">
+          <label><input type="checkbox" name="skills" value="html"> HTML</label>
+          <label><input type="checkbox" name="skills" value="css"> CSS</label>
+          <label><input type="checkbox" name="skills" value="js"> JavaScript</label>
+          <label><input type="checkbox" name="skills" value="java"> Java</label>
+          <label><input type="checkbox" name="skills" value="php"> PHP</label>
+          <label><input type="checkbox" name="skills" value="react"> React</label>
+        </div>
+        <span class="error" id="skillsError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="city">City</label>
+        <select name="city" id="city">
+          <option value="">--Select City--</option>
+          <option value="new-york">New York</option>
+          <option value="los-angeles">Los Angeles</option>
+          <option value="chicago">Chicago</option>
+          <option value="houston">Houston</option>
+          <option value="phoenix">Phoenix</option>
+          <option value="philadelphia">Philadelphia</option>
+          <option value="san-antonio">San Antonio</option>
+          <option value="san-diego">San Diego</option>
+        </select>
+        <span class="error" id="cityError"></span>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn">Sign Up</button>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1

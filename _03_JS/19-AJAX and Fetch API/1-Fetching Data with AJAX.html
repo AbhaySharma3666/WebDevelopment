@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,4 +37,44 @@
         }
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Example</title>
+</head>
+<body>
+    <h1>Product List</h1>
+    <button onclick="fetchProducts()">Fetch Products</button>
+    <p>when the user clicks the "Fetch Products" button, the fetchProducts function is triggered. Inside this function, we create a new XMLHttpRequest object, specify the URL of the server endpoint ('products.json' in this case), and define the onload event handler to process the response.
+
+        Upon successful retrieval of data, we parse the JSON response and update the UI accordingly. If an error occurs during the AJAX request, we handle it appropriately.</p>
+
+    <script>
+        function fetchProducts() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'products.json', true);
+            xhr.onload = function () {
+                if (xhr.status >= 200 && xhr.status < 300) {
+                    try {
+                        var products = JSON.parse(xhr.responseText);
+                        // Update the UI with fetched product data
+                        console.log(products);
+                    } catch (e) {
+                        console.error('Error parsing JSON:', e);
+                    }
+                } else {
+                    console.error('Failed to fetch products. Status:', xhr.status, xhr.statusText);
+                }
+            };
+            xhr.onerror = function () {
+                console.error('Network error occurred while fetching products.');
+            };
+            xhr.send();
+        }
+    </script>
+</body>
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1
 </html>

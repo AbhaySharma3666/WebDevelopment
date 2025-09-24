@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Context docBase="D:/ProgrammingCode/Full web development with java/code/Web Development/_08_Back_End_DeveIopment_(Advance_Java)/_04_Request_Displatcher/src/main/webapp">
   <Resources cacheMaxSize="10240">
@@ -5,3 +6,12 @@
     <PostResources base="C:/Users/amitr/.m2/repository/jakarta/servlet/jakarta.servlet-api/6.1.0/jakarta.servlet-api-6.1.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jakarta.servlet-api-6.1.0.jar"/>
   </Resources>
 </Context>
+=======
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context docBase="D:/ProgrammingCode/Full web development with java/code/Web Development/_08_Back_End_DeveIopment_(Advance_Java)/_04_Request_Displatcher/src/main/webapp">
+  <Resources cacheMaxSize="10240">
+    <PreResources base="D:/ProgrammingCode/Full web development with java/code/Web Development/_08_Back_End_DeveIopment_(Advance_Java)/_04_Request_Displatcher/target/classes" className="org.apache.catalina.webresources.DirResourceSet" webAppMount="/WEB-INF/classes"/>
+    <PostResources base="C:/Users/amitr/.m2/repository/jakarta/servlet/jakarta.servlet-api/6.1.0/jakarta.servlet-api-6.1.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jakarta.servlet-api-6.1.0.jar"/>
+  </Resources>
+</Context>
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1

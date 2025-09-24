@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
                     _13_Type_Of_Relationship
@@ -17,3 +18,24 @@
 
 
 
+=======
+
+
+                    _13_Type_Of_Relationship
+                 ______________|____________________
+                |                                  |
+          Inheritance                           Association
+         (Is a Relationship)                    (Has a Relationship)
+         |                                       __________|_______________
+         |-> Single                             |                         |
+         |-> Multiple                        Aggregation             Composition
+         |-> hierarchical                     (weak bond)             (strong bond)
+         |-> hybrid
+
+
+
+
+
+
+
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1

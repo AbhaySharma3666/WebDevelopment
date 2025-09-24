@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -78,4 +79,86 @@
     </script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .weather-container {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-width: 400px;
+        }
+
+        .weather-container h2 {
+            margin: 0 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><strong>API :</strong> An API (Application Programming Interface) acts as a messenger
+            between different software applications. It's a set of rules and specifications that
+            define how applications communicate with each other to exchange data or functionality.
+        </li>
+        <li><strong>Importance of APIs in JavaScript</strong>
+            <ul>
+                <li>Integration and Interoperability</li>
+                <li>Access to External Services and Data</li>
+                <li>Enhanced Functionality</li>
+                <li>Streamlined Development</li>
+                <li>Scalability and Flexibility</li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="weather-container" id="weather">
+        <h2>Weather Information</h2>
+        <p id="city">City: Loading...</p>
+        <p id="temperature">Temperature: Loading...</p>
+        <p id="description">Description: Loading...</p>
+    </div>
+
+    <script>
+        const apiKey = '27e8a1928db894a9b4250f67ad1efd08';
+        const city = 'Bhilai';
+
+        // Corrected API endpoint with query parameters
+        fetch(`http://api.weatherstack.com/current?access_key=${apiKey}&query=${city}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.error) {
+                    throw new Error(data.error.info);
+                }
+                // Update the weather information on the webpage
+                document.getElementById('city').textContent = `City: ${data.location.name}`;
+                document.getElementById('temperature').textContent = `Temperature: ${data.current.temperature}°C`;
+                document.getElementById('description').textContent = `Description: ${data.current.weather_descriptions[0]}`;
+            })
+            .catch(error => {
+                console.error('Error fetching weather data:', error);
+                document.getElementById('weather').innerHTML = '<p>Error fetching weather data. Please try again later.</p>';
+            });
+    </script>
+</body>
+
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1
 </html>

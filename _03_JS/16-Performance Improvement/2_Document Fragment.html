@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,4 +27,34 @@
         console.log("Total Time taken by code 1: " + (t2 - t1) + " milliseconds");
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let t1 = performance.now();
+        let  fragment = document.createDocumentFragment();
+
+        for(let i=1 ; i<=100 ; i++){
+            let para = document.createElement('p')
+            para.textContent = "This is paragraph " + i;
+            // No reflow and No repaint for the below line
+            fragment.appendChild(para)
+        }
+        // the below line take 1 reflow and 1 repaint
+        document.body.appendChild(fragment);
+
+        let t2 = performance.now();
+        console.log("Total Time taken by code 1: " + (t2 - t1) + " milliseconds");
+    </script>
+</body>
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1
 </html>

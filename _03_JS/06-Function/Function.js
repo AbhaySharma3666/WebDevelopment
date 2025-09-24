@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*Syntax :- 
 
 function functionName(parameter1, parameter2, ...) {
@@ -32,3 +33,39 @@ let multi = function(num1, num2){
 console.log(multi(10, 20));
 
 
+=======
+/*Syntax :- 
+
+function functionName(parameter1, parameter2, ...) {
+    // Function body
+    // Code to be executed
+    return value; // Optional
+} */
+
+console.log("---------another way to write function----------");
+
+// function Definition
+function sayMyword(){
+    console.log("Hiii...");
+}
+// function call
+sayMyword();
+
+console.log("---------another way to write function----------");
+
+function count(){
+    for(let i=1 ; i<=5 ; i++){
+        console.log(i);
+    }
+}
+count();
+
+console.log("--------another way to variable function------------");
+
+let multi = function(num1, num2){
+    return num1 * num2;
+}
+console.log(multi(10, 20));
+
+
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1

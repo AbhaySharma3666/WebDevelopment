@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,4 +73,80 @@
     </table>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in HTML</title>
+    <style >
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: left;
+            
+        }
+
+        th {
+            background-color: #f2f2f2;
+            user-select: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tables in HTML</h1>
+    
+    <table>
+        <!-- Head of the table -->
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <!-- Body of the table -->
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>101</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Jane Doe</td>
+                <td>102</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>John Smith</td>
+                <td>103</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <!-- colspan is used to merge the columns in a row  -->
+                <td colspan="1">Thanks</td>
+                <td colspan="2">You</td>
+                
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1
 </html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -171,3 +172,178 @@
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(to right, #434343 0%, rgb(136, 49, 49) 100%);
+            padding: 20px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+            width: 75%;
+            max-width: 900px;
+            height: auto;
+            background-color: rgb(69, 9, 68);
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+            gap: 0;
+            overflow: hidden;
+        }
+
+        .leftBox {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            flex-basis: 50%;
+            padding: 40px;
+            gap: 35px;
+        }
+
+        .heading h2 {
+            color: #ffffff;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .para p {
+            color: #ffffff;
+            font-size: 1rem;
+            text-align: left;
+        }
+
+        .showtext {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 10px;
+        }
+
+        .Box1,
+        .Box2,
+        .Box3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .Box1 p, .Box2 p, .Box3 p {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .rightBox {
+            flex-basis: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .rightBox img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0 10px 10px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card {
+                flex-direction: column;
+                width: 90%;
+                text-align: center;
+                padding: 15px;
+            }
+
+            .leftBox, .rightBox {
+                width: 100%;
+                flex-basis: auto;
+            }
+
+            .rightBox img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+
+            .showtext {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .Box1, .Box2, .Box3 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="leftBox">
+                <div class="heading">
+                    <h2>Get insights that help <br> your business grow</h2>
+                </div>
+                <div class="para">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                        eveniet ducimus recusandae, praesentium inventore suscipit quae obcaecati
+                        consectetur. Reiciendis, suscipit. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Natus, possimus.
+                    </p>
+                </div>
+
+                <div class="showtext">
+                    <div class="Box1">
+                        <p>10k+</p>
+                        <p>Comments</p>
+                    </div>
+                    <div class="Box2">
+                        <p>214</p>
+                        <p>Paid Users</p>
+                    </div>
+                    <div class="Box3">
+                        <p>12k+</p>
+                        <p>Views</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightBox">
+                <img src="./image/05.jpg" alt="Image 05">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1

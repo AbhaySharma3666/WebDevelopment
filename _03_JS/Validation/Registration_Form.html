@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -130,4 +131,138 @@
     </script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 50%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Registration Form</h2>
+    <form action="#" method="post" onsubmit="return validateForm()">
+        <label for="username">Full Name:</label>
+        <input type="text" id="username" name="username" required>
+
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>Male
+        <input type="radio" id="female" name="gender" value="Female" required>Female
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" >
+        <span id="emailerror" class="error"></span>
+        <br><br>
+
+        <label for="skill">Skill:</label how>
+        <input type="checkbox" id="java" name="skill" value="Java">Java
+        <input type="checkbox" id="JS" name="skill" value="JS">JavaScript
+        <input type="checkbox" id="php" name="skill" value="php">Php
+        <input type="checkbox" id="fullstack" name="skill" value="fullstack">Full Stack
+        <span id="skillserror" class="error"></span>
+        <br><br>
+
+        <label for="city">City :</label>
+        <select id="city" name="city" required>
+            <option value="">Select a city</option>
+            <option value="pune">Pune</option>
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="chhattisgarh">Chhattisgarh</option>
+            <option value="kolkata">Kolkata</option>
+            <option value="bangalore">Bangalore</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="chennai">Chennai</option>
+            <option value="jaipur">Jaipur</option>
+            <option value="ahmedabad">Ahmedabad</option>
+            <option value="surat">Surat</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <script>
+        function validateForm(){
+
+            document.getElementById("emailerror").innerHTML = "";
+            document.getElementById("skillserror").innerHTML = "";
+
+
+            var fullName = document.getElementById("username").value;
+            var gender = document.querySelector('input[name="gender"]:checked');     
+            var email = document.getElementById("email").value;
+            var skills = document.querySelectorAll('input[name="skill"]:checked');
+            var city = document.getElementById("city").value;
+
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if(!emailPattern.test(email)) {
+                document.getElementById("emailerror").innerHTML = "Invalid email id";
+                return false;
+            }
+            if (skills.length == 0){
+                document.getElementById("skillserror").innerHTML = "Select at least one skill";
+                return false;
+            } 
+            alert("Registration successful!\n" +
+                "Full Name: " + fullName + "\n" );
+        }
+    </script>
+</body>
+
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1
 </html>

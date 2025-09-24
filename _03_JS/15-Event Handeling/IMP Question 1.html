@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,4 +37,44 @@
         
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMP Question</title>
+</head>
+<body>
+    <div id="wrapper">
+        <p id="fpara">First <span>First span</span> Para</p>
+        <p id="spara">Second <span>Second span</span> Para</p>
+        <p id="tpara">Third <span>Third span</span> Para</p>
+        <p id="fopara">Fourth <span>Fourth span</span> Para</p>
+    </div>
+
+    <script>
+        let paras = document.querySelectorAll('p');
+
+        function alertPara(){
+            // alert("You have clicked on para: "+ event.target.textContent);
+            if(event.target.nodeName === 'SPAN'){
+                alert("You have clicked on span: "+ event.target.textContent);
+            }
+        }
+
+        // for(let i=0 ; paras.length ; i++){
+        //     let para = paras[i];
+        //     para.addEventListener('click', alertPara);
+        // }
+
+
+        // addEventListerner on div
+        let mydiv = document.getElementById('wrapper');
+        document.addEventListener('click',alertPara);
+
+        
+    </script>
+</body>
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1
 </html>

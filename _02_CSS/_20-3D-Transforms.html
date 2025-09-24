@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -197,4 +198,205 @@
     </footer>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transform</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            height: 150px;
+            width: 150px;
+            margin: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: whitesmoke;
+            transition: all 2s ease;
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+        }
+
+        p {
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .credit {
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        #box1:hover {
+            color: white;
+            transform: rotateX(45deg);
+            background-color: #990099;
+        }
+
+        #box2:hover {
+            color: white;
+            transform: rotateY(45deg);
+            background-color: #990099;
+        }
+
+        #box3:hover {
+            color: white;
+            transform: rotateZ(45deg);
+            background-color: #990099;
+        }
+
+        #box4:hover {
+            color: white;
+            transform: translateX(100px);
+            background-color: #990099;
+        }
+
+        #box5:hover {
+            color: white;
+            transform: translateY(100px);
+            background-color: #990099;
+        }
+
+        #box6:hover {
+            color: white;
+            transform: perspective(200px) translateZ(100px);
+            background-color: #990099;
+        }
+
+        #box7:hover {
+            color: white;
+            transform: perspective(200px) translateZ(-100px);
+            background-color: #990099;
+        }
+
+        #box8:hover {
+            color: white;
+            transform: scaleX(1.5);
+            background-color: #990099;
+        }
+
+        #box9:hover {
+            color: white;
+            transform: scaleY(1.5);
+            background-color: #990099;
+        }
+
+        #box10:hover {
+            color: white;
+            transform: perspective(300px) rotateY(30deg) scaleZ(5);
+            background-color: #990099;
+        }
+
+        #box11:hover {
+            color: white;
+            transform: perspective(300px) rotateY(-30deg) scaleZ(5);
+            background-color: #990099;
+        }
+
+        #box12:hover {
+            color: white;
+            transform: perspective(300px) rotateX(30deg) scaleZ(5);
+
+            background-color: #990099;
+        }
+
+        footer>p {
+            text-align: center;
+            margin: 20px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        @media only screen and (max-width: 430px) {
+            .container {
+                flex-direction: row;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1> 3D CSS Transform
+        <p class="credit">Created by &copy;Abhay</p>
+
+    </h1>
+    <div class="container">
+        <div class="box" id="box1">
+            <p>Hover too see transform: rotateX(45deg)</p>
+        </div>
+        <div class="box" id="box2">
+            <p>Hover too see transform: rotateY(45deg)</p>
+        </div>
+        <div class="box" id="box3">
+            <p>Hover too see transform: rotateZ(45deg)</p>
+        </div>
+        <div class="box" id="box4">
+            <p>Hover too see transform: translateX(100px)</p>
+        </div>
+        <div class="box" id="box5">
+            <p>Hover too see transform: translateY(100px)</p>
+        </div>
+        <div class="box" id="box6">
+            <p>Hover too see transform: perspective(200px) translateZ(100px)</p>
+        </div>
+        <div class="box" id="box7">
+            <p>Hover too see transform: transform: perspective(200px) translateZ(-100px)</p>
+        </div>
+        <div class="box" id="box8">
+            <p>Hover too see transform: scaleX(1.5)</p>
+        </div>
+        <div class="box" id="box9">
+            <p>Hover too see transform: scaleY(1.5)</p>
+        </div>
+        <div class="box" id="box10">
+            <p>Hover too see transform: perspective(300px) rotateY(30deg) scaleZ(5) </p>
+        </div>
+        <div class="box" id="box11">
+            <p>Hover too see transform: perspective(300px) rotateY(-30deg) scaleZ(5)
+
+            </p>
+        </div>
+        <div class="box" id="box12">
+            <p>Hover too see
+                transform: perspective(300px) rotateX(30deg) scaleZ(5)
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p>Change the limits according to you and see the magic.</p>
+    </footer>
+</body>
+
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1
 </html>

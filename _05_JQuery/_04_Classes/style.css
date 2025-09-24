@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     .mydiv {
         border: 2px solid black;
@@ -14,4 +15,22 @@ body {
         padding: 20px;
 
     }
+=======
+body {
+    .mydiv {
+        border: 2px solid black;
+        width: 400px;
+    }
+
+    .changeClassName {
+        color: red;
+        background-color: black;
+    }
+
+    .div2 {
+        border: 3px solid brown;
+        padding: 20px;
+
+    }
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1
 }

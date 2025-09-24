@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-image: url('../image/Blog-1-1.png');
     background-size: cover;
@@ -57,4 +58,65 @@ body {
 .auth-links .login:hover {
     background-color: #959292; /* Light gray background on hover */
     color: white !important;
+=======
+body {
+    background-image: url('../image/Blog-1-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+            
+}
+.navbar {
+    font-size: 0.85rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 85%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Optional: subtle shadow */
+}
+.navbar .nav-link {
+    color: #000 !important;           /* Set navbar text color to black */
+    font-weight: 400;
+    transition: color 0.2s, font-weight 0.2s;
+}
+
+.navbar .nav-link:hover {
+    color: #888 !important;           /* Light gray on hover */
+    font-weight: 400;                 /* Bold on hover */
+}
+
+.auth-links {
+    background: #f5f5f5; /* Light gray background */
+    border-radius: 16px;
+    padding: 4px 16px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.auth-links .signup{
+    color: white !important;
+    /* font-weight: 500; */
+    background-color: #1c751d;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+    padding: 7px 12px;
+}
+.auth-links .login{
+    color: white !important;
+    background-color: gray;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+    padding: 7px 12px;
+}
+
+.auth-links .signup:hover {
+    background-color: rgb(31, 137, 34); /* Light green background on hover */
+    color: white !important;
+}
+
+.auth-links .login:hover {
+    background-color: #959292; /* Light gray background on hover */
+    color: white !important;
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1
 }

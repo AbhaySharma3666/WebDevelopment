@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -87,4 +88,95 @@
     </script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack</title>
+</head>
+
+<body>
+    <h1>Callback Finction</h1>
+    <p>Callback fucntion are Callback functions are functions that are passed as arguments to other
+        functions and are invoked after the completion of a certain task or at a specified event.
+        They allow for the execution of code asynchronously or in response to events, enabling
+        non-blocking behavior and enhancing code modularity.</p>
+
+    <p>Example:</p>
+
+    <ul>
+        <li><strong>Asynchronous Callback :</strong> fetchData() simulates an asynchronous operation
+            (e.g., fetching data from an API) and accepts a callback function processData() as an
+            argument. Once the data is fetched, the callback function is invoked with the retrieved
+            data.</li>
+
+        <li><strong>Event Handling with Callbacks :</strong> handleClick() is a callback function
+            registered to the click event of a button element. Whenever the button is clicked, the
+            callback function is executed, logging "Button clicked" to the console.</li>
+
+        <li><strong>Higher-Order Functions : </strong> higherOrderFunction() is a higher-order
+            function that accepts a callback function as an argument. When higherOrderFunction() is
+            invoked with callbackFunction as the argument, the callback function is executed within
+            the higher-order function.</li>
+
+        <li>
+            <strong>Benefits of Callback Functions :</strong>
+            <ul>Asynchronous Operations: Callback functions enable the execution of code
+                asynchronously, making it possible to handle time-consuming tasks without blocking
+                the main thread.</ul>
+            <ul>Modularity: Callback functions promote code modularity and reusability by allowing
+                logic to be encapsulated in separate functions.</ul>
+            <ul>Event Handling: Callback functions are commonly used for event handling, allowing
+                code to respond to user interactions and other events dynamically.</ul>
+        </li>
+    </ul>
+
+    <button id="myButton">Submit</button>
+
+
+    <script>
+        // Asynchronous Callback Example
+        function fetchData(processData) {
+            // Simulated asynchronous operation
+            setTimeout(() => {
+                const data = "Data fetched successfully";
+                processData(data);
+            }, 4000);
+        }
+
+        function processData(data) {
+            console.log(`Processing data: ${data}`);
+        }
+
+        fetchData(processData);
+
+
+        // Event Handling with Callbacks
+        const button = document.getElementById('myButton');
+
+        function handleClick() {
+            console.log("Button clicked");
+        }
+
+        button.addEventListener('click', handleClick);
+
+
+        // Higher-Order Functions
+        function higherOrderFunction(callback) {
+            console.log("Inside higher-order function");
+            callback();
+        }
+
+        function callbackFunction() {
+            console.log("Inside callback function");
+        }
+
+        higherOrderFunction(callbackFunction);
+    </script>
+</body>
+
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1
 </html>

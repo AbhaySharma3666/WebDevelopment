@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
    <script>
       var obj = 4;
@@ -52,4 +53,60 @@
       document.writeln(person.greet() + "<br><br>");// Calling the function
       document.writeln("Name: " + person.name + "<br><br>");
    </script>
+=======
+<html>
+   <script>
+      var obj = 4;
+       document.write(obj+"<br>");
+
+
+       let objk = {
+         name: "Abhay",
+         interest: "Programming and Gaming",
+         skills: ["JavaScript", "Python", "Problem-Solving"]
+      };
+
+     
+      // Convert the object to a string
+      document.write(JSON.stringify(objk+"<br><br>"));
+
+      document.writeln(objk.name + "<br>");
+      document.writeln(objk.interest + "<br>");
+      document.writeln(objk.skills[0] + " ");
+      document.writeln(objk.skills[1] + " ");
+      document.writeln(objk.skills[2] + "  <br><br>");
+
+      document.writeln("Name: " + objk["name"] + "<br>");
+      document.writeln("Interest: " + objk["interest"] + "<br><br>");
+
+      for(let value in objk){
+         document.writeln(value + ": " + objk[value] + "<br>");
+      }
+      document.writeln("<br><br>");
+
+       let age1 = "age";
+      let demo = {
+         age: 20,
+         city: "Delhi"
+      };
+      // Accessing the age property
+      document.writeln("Age: " + demo[age1] + "<br><br>");
+
+
+      // Accessing the function in the object
+      let person = {
+         name: "Abhay",
+         age: 20,
+         city: "Delhi",
+         greet: function() {
+            document.writeln("Hello, my name is " + this.name + ".<br>");// Using 'this' to refer to the current object
+
+            // document.writeln(name, age); // This will not work as 'name' and 'age' are not defined in this scope
+            return "I am " + this.age + " years old and I live in " + this.city + ".";
+         }
+      };
+      document.writeln(person.greet() + "<br><br>");// Calling the function
+      document.writeln("Name: " + person.name + "<br><br>");
+   </script>
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1
 </html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,4 +28,35 @@
         document.write("</table>");
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let arr = [
+            ["John",25,"Male",52600],
+            ["Jane",22,"Female",48000],
+            ["Doe",30,"Male",60000],
+            ["Alice",28,"Female",52000],
+            ["Bob",35,"Male",70000]
+        ];
+
+        document.write("<table border='5'>");
+            for (let r = 0; r < 4; r++) {
+                document.write("<tr>");
+                for (let c = 0; c < 4; c++) {
+                    document.write("<td>" + arr[r][c] + "</td>");
+                }
+                document.write("</tr>");
+            }
+        document.write("</table>");
+    </script>
+</body>
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1
 </html>

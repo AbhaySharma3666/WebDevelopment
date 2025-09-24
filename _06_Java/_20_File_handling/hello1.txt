@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 A
 India
 65
 Java
+=======
+A
+India
+65
+Java
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1
 12.3

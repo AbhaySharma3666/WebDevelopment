@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,4 +37,44 @@
 
         </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Callback Function</h1>
+
+    <script>
+
+        function calci(a, b, callback){
+            return callback(a, b);
+        }
+
+        const add = (a,b)=>a+b;
+        setTimeout(() => {
+            const addResult = calci(50,20,add);
+            console.log(`Addition Result: ${addResult}`);
+        }, 4000);
+        
+
+        const sub = (a,b)=>a-b;
+        const subResult = calci(50, 20, sub);
+        console.log("subs : "+ subResult);
+
+        const mul = (a,b)=>a*b;
+        const mulResult = calci(50, 20, mul);
+        console.log("mul : "+ mulResult);
+
+        const div = (a,b)=>a/b;
+        const divResult = calci(10, 5, div);
+        console.log("div : "+ divResult);
+        
+
+        </script>
+</body>
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1
 </html>

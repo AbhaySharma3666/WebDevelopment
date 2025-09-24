@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ⚙️ What Is an Exception?
 An exception is an event that disrupts the normal flow of a program’s instructions. It is an object that represents an error or unexpected behavior during program execution.
 
@@ -92,3 +93,99 @@ public class ThrowsExample {
 - Use finally for cleanup (e.g., closing files or database connections).
 - Avoid catching Exception or Throwable unless absolutely necessary.
 - Create custom exceptions for domain-specific errors.
+=======
+⚙️ What Is an Exception?
+An exception is an event that disrupts the normal flow of a program’s instructions. It is an object that represents an error or unexpected behavior during program execution.
+
+Types of Exceptions in Java
+| Type      | Description
+| Checked   | Checked at compile-time. Must be either caught or declared in the method.
+| Unchecked | Occur at runtime. Not checked at compile-time.
+| Errors    | Serious problems not intended to be caught by applications (e.g., OutOfMemoryError).
+
+
+
+🔄 Java Exception Hierarchy
+java.lang.Object
+   ↳ java.lang.Throwable
+        ↳ java.lang.Exception (checked)
+             ↳ java.lang.RuntimeException (unchecked)
+        ↳ java.lang.Error (unchecked)
+
+
+
+🧰 Core Keywords for Exception Handling
+| Keyword  | Purpose
+| try      | Wraps code that might throw an exception.
+| catch    | Defines a block to handle the exception.
+| finally  | Executes code after try/catch, regardless of exception occurrence.
+| throw    | Used to explicitly throw an exception.
+| throws   | Declares exceptions a method might throw.
+
+
+
+🧪 Basic Syntax Example
+public class Example {
+    public static void main(String[] args) {
+        try {
+            int result = 10 / 0; // This will throw ArithmeticException
+        } catch (ArithmeticException e) {
+            System.out.println("Cannot divide by zero!");
+        } finally {
+            System.out.println("This block always executes.");
+        }
+    }
+}
+
+
+🧱 Multiple Catch Blocks
+try {
+    int[] arr = new int[5];
+    arr[10] = 50;
+} catch (ArithmeticException e) {
+    System.out.println("Arithmetic error");
+} catch (ArrayIndexOutOfBoundsException e) {
+    System.out.println("Array index error");
+} catch (Exception e) {
+    System.out.println("General exception");
+}
+
+
+Java checks catch blocks from top to bottom. Always place more specific exceptions before general ones.
+
+
+🧨 Throwing Exceptions
+public class ThrowExample {
+    static void validate(int age) {
+        if (age < 18)
+            throw new IllegalArgumentException("Not eligible to vote");
+        else
+            System.out.println("Eligible to vote");
+    }
+
+    public static void main(String[] args) {
+        validate(16);
+    }
+}
+
+
+
+📤 Declaring Exceptions with throws
+public class ThrowsExample {
+    static void checkFile() throws IOException {
+        FileReader file = new FileReader("test.txt");
+    }
+
+    public static void main(String[] args) throws IOException {
+        checkFile();
+    }
+}
+
+
+
+✅ Best Practices
+- Catch only those exceptions you can handle meaningfully.
+- Use finally for cleanup (e.g., closing files or database connections).
+- Avoid catching Exception or Throwable unless absolutely necessary.
+- Create custom exceptions for domain-specific errors.
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1

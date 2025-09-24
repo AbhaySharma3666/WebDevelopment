@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -78,4 +79,86 @@
     </script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ad!</p>
+
+    <script>
+        // This is a simple promise example
+        let firstPromise = new Promise((resolve, reject) => {
+            console.log("First promise started");
+            resolve("1001");
+            // reject("new error");
+        });
+
+
+        // This is a simple promise example with a timeout
+        let asyncPromise = new Promise((resolve, reject) => {
+            // async function to handle the promise
+            setTimeout(function sayMyName() {
+                console.log("I am Abhay");
+            }, 3000);
+            resolve(1);
+        });
+
+
+        // Promise with then and catch
+        let promise1 = new Promise((resolve, reject) => {
+            const randomBoolean = Math.random() < 0.5;
+            console.log(randomBoolean);
+            let success = randomBoolean; // Simulating success or failure
+            if (success) {
+                resolve("Promise resolved successfully!");
+            } else {
+                reject("Promise rejected!");
+            }
+        });
+
+        promise1
+            .then((message) => {
+                console.log("The ka message id " + message);
+            })
+            .catch((error) => {
+                console.error("Error: " + error);
+            })
+            .finally(() => {
+                console.log("Promise handling completed.");
+            });
+
+
+
+            // promise multiple chaining or promiseall
+
+        let promise2 = new Promise((resolve, reject) => {
+            setTimeout(resolve, 1000, "Promise 2 ");
+        });
+        let promise3 = new Promise((resolve, reject) => {
+            setTimeout(resolve, 2000, "Promise 3");
+        });
+        let promise4 = new Promise((resolve, reject) => {
+            setTimeout(reject, 3000, "Promise 4");
+        });
+
+        // any one of the promise is rejected then all the promises are rejected
+        Promise.all([promise2,promise3,promise4])
+        .then((value) => {
+            console.log(value);
+        })
+        .catch((error) => {
+            console.error("Error: " + error);
+        })
+
+    </script>
+</body>
+
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1
 </html>

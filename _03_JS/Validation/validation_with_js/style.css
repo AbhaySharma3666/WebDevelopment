@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* General Reset */
 * {
   margin: 0;
@@ -120,3 +121,127 @@ input.error-field, select.error-field {
     flex-direction: column;
   }
 }
+=======
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Form Container */
+.form-container {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 50 0px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2575fc;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(37, 117, 252, 0.5);
+}
+
+/* Options (radio/checkbox) */
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.options label {
+  font-weight: normal;
+  color: #333;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #6a11cb;
+}
+/* Error message styling */
+.error {
+  display: block;         
+  font-size: 13px;        
+  color: red;            
+  margin-top: 4px;         
+  font-style: italic;      
+}
+/* Input with error */
+input.error-field, select.error-field {
+  border-color: red;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 20px 15px;
+  }
+
+  .options {
+    flex-direction: column;
+  }
+}
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1

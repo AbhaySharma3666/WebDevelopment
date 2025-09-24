@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -176,4 +177,184 @@ a{
     font-size: 1rem;
     padding: 10px;
     color: rgb(0, 0, 0);
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+     font-family: Arial, sans-serif;    
+}
+
+.container{
+    height: auto;
+    width: auto;
+    overflow-x: none;
+    margin: 0 auto;
+    padding-bottom: 10px;
+} 
+/*-----------------Header Section-----------------*/
+/*-----------------Navbar Section-----------------*/
+.navcontainer{
+    width: auto;
+    /* background-color: rgb(113,113,15410.776); */
+    /* background: rgb(34,193,195); */
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+nav{
+    width: 100%;  
+}
+
+#navlist{
+    width: 100%;
+    padding: 10px;
+    margin-left:15px ;
+    margin-right: 15px;
+    list-style: none;      /* remove bullet point*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navLogo{
+    font-size: 2.8rem;
+    color: azure;
+}
+
+a{
+    text-decoration: none;
+    color: white; 
+    font-size: 1.5rem;
+
+}
+
+#navItems{
+    display: flex;
+    gap: 40px;
+}
+
+#navItems a {
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+#navItems a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/*-----------------Main Section-----------------*/
+
+.contentBox{
+    width: 70%;
+    margin: auto;
+    border-radius: 20px 20px 20px 20px;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2rem;
+    box-shadow: 1px 0px 30px black;
+    margin-bottom: 10px; /*Added margin-borrom*/
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid black; */
+    /* border-radius: 2px 20px 2px 20px; */
+    padding: 10px;
+    margin: 10px 0;
+    /* background-color: #f9f9f9; */
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.leftBox h2{
+    font-size: 1.5rem;
+    color: black;
+    /* text-align: center; */
+}
+
+.ingredientsBox{
+    font-size: 1rem;
+}
+
+.recipeBox{
+    font-size: 1rem;
+}
+
+.rightBox{
+    position: relative;
+    overflow: hidden;
+    transition: all .5s linear 0s;
+}
+
+.rightBox img{
+    height: 250px;
+    border-radius: 40px;
+    transition: all .5s linear 0s;
+    
+}
+
+.rightBox:hover{
+    transform: scale(1.06);
+    
+}
+
+.rightBox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(102, 100, 100, 0.5);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.rightBox:hover .overlay{
+    opacity: 1;
+    transition: all .5s linear 0s;
+    
+}
+
+.rightBox .overlay span{
+    color: white;
+    font-size: 2rem;
+}
+/*-----------------Footer Section-----------------*/
+
+.footerBox{
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    width: 100%;
+    text-align: center;
+}
+
+.footerBox p{
+    font-size: 1rem;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1
 }

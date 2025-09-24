@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
  📊 Java String Types Comparison
@@ -29,3 +30,36 @@
 
 
 
+=======
+
+
+ 📊 Java String Types Comparison
+ | Property          | String                | StringBuffer            | StringBuilder        |
+ +-------------------+-----------------------+-------------------------+----------------------+
+ | Mutability        | Immutable             | Mutable                 | Mutable              |
+ +-------------------+-----------------------+-------------------------+----------------------+
+ | Thread Safety     | Thread-safe           | Thread-safe             | Not thread-safe      |
+ |                   | (due to immutability) | (synchronized methods)  |                      |
+ +-------------------+-----------------------+-------------------------+----------------------+
+ | Performance       | Slow for frequent     | Slower than             | Fastest for single   |
+ |                   |  changes              |  StringBuilder          | -threaded operations |
+ +-------------------+-----------------------+-------------------------+----------------------+
+ | Storage Location  | String Pool (interned)| Heap                    | Heap                 |
+ +-------------------+-----------------------+-------------------------+----------------------+
+ | Use Case          | Constant text,        | Multi-threaded          | Single-threaded      |
+ |                   | config values         | string manipulation     | string manipulation  |
+ +-------------------+-----------------------+-------------------------+----------------------+
+ | Methods Available | Limited               | Rich API (append(),     | Same as StringBuffer |
+ |                   | (e.g.,concat())       | insert(), etc.)         |                      |
+ +-------------------+-----------------------+-------------------------+----------------------+
+ | Memory Efficiency | High (due to pooling) | Moderate (no pooling,   | Moderate (same as    |
+ |                   |                       | resizable buffer)       | StringBuffer)        |
+ +-------------------+-----------------------+-------------------------+----------------------+
+ | Synchronization   | Not needed            | Yes (built-in)          | No                   |
+ +-------------------+-----------------------+-------------------------+----------------------+
+ | Conversion        | toString()            | toString()              | toString()           |
+ +-------------------+-----------------------+-------------------------+----------------------+
+
+
+
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1

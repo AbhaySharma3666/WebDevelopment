@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 #result{
     border: 3px solid red;
     width: 260px;
     background-color: black;
     color: greenyellow;
+=======
+#result{
+    border: 3px solid red;
+    width: 260px;
+    background-color: black;
+    color: greenyellow;
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1
 }

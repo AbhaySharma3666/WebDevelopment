@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Event handling : The process of responding to events that occur in the browser environment.
 
 Event : Events are occurrences that happen in the browser environment triggered by user actions or system-generated notifications.
@@ -73,3 +74,80 @@ Phases of Events in JavaScript
   -Target Phase : This is the phase where the event reaches the target element—the element on which the event was originally triggered.
 
   -Bubbling Phase : Following the target phase, the event bubbles up from the target element through its ancestors, propagating outward.
+=======
+Event handling : The process of responding to events that occur in the browser environment.
+
+Event : Events are occurrences that happen in the browser environment triggered by user actions or system-generated notifications.
+
+Types of events :
+  1. Mouse events : Events triggered by mouse actions.
+     - click : Occurs when the mouse button is clicked.
+     - dblclick : Occurs when the mouse button is double-clicked.
+     - mouseover : Occurs when the mouse pointer is moved over an element.
+     - mouseout : Occurs when the mouse pointer is moved out of an element.
+     - mousedown : Occurs when the mouse button is pressed down.
+     - mouseup : Occurs when the mouse button is released.
+     - mousemove : Occurs when the mouse pointer is moved.
+
+  2. Keyboard events : Events triggered by keyboard actions.
+     - keydown : Occurs when a key is pressed down.
+     - keyup : Occurs when a key is released.
+     - keypress : Occurs when a key is pressed and released (deprecated).
+
+  3. Form events : Events triggered by form actions.
+     - submit : Occurs when a form is submitted.
+     - change : Occurs when the value of an input element changes.
+     - focus : Occurs when an input element gains focus.
+     - blur : Occurs when an input element loses focus.
+     - input : Occurs when the value of an input element is changed.
+
+  4. Window events : Events triggered by window actions.
+     - load : Occurs when the page is fully loaded.
+     - resize : Occurs when the window is resized.
+     - scroll : Occurs when the page is scrolled.
+     - unload : Occurs when the page is unloaded.
+
+  5. Media events : Events triggered by media actions.
+     - play : Occurs when media playback starts.
+     - pause : Occurs when media playback is paused.
+     - ended : Occurs when media playback ends.
+     - volumechange : Occurs when the volume of media changes.
+     - timeupdate : Occurs when the current playback position of media changes.
+     - seeking : Occurs when the media is seeking.
+     - seeked : Occurs when the media has finished seeking.
+     - canplay : Occurs when the media is ready to play.
+
+  6. Drag and drop events : Events triggered by drag and drop actions.
+     - drag : Occurs when an element is being dragged.
+     - dragstart : Occurs when the drag operation starts.
+     - dragend : Occurs when the drag operation ends.
+
+
+Event Listener : A function that is called when a specific event occurs on a specific element.
+
+How do Listeners work :
+
+  1.addEventListener : A method that attaches an event listener to an element.
+
+  Syntax : target-element.addEventListener(event-type, function, options);
+    where, options (optional): An object containing options that specify characteristics about the event listener, such as once, capture, etc.
+
+
+  2.removeEventListener : A method that removes an event listener from an element.
+
+  Syntax : target-element.removeEventListener(event-type, function, options);
+
+
+
+Phases of Events in JavaScript
+
+  Introduction :- Events in JavaScript follow a structured lifecycle, comprising different phases from the moment they occur to when they are handled.
+
+  Events in JavaScript go through three distinct phases:
+
+  -Capturing Phase : In this phase the event goes through the HTML DOM and searches for the target element.
+
+  -Target Phase : This is the phase where the event reaches the target element—the element on which the event was originally triggered.
+
+  -Bubbling Phase : Following the target phase, the event bubbles up from the target element through its ancestors, propagating outward.
+>>>>>>> 35387576b9a0b809457b398be6486ca5e6dbc9f1
