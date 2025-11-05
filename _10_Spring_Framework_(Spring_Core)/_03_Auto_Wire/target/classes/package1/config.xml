@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+         http://www.springframework.org/schema/beans
+         https://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/context
+         https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<!-- Enable annotation-based injection -->
+	<context:annotation-config /> <!-- method 1  -->
+	
+	
+    <!-- Address Bean -->
+    <bean id="address" class="package1.Address">
+        <property name="city" value="Bhilai"/>
+        <property name="state" value="Chhattisgarh"/>
+        <property name="country" value="India"/>
+    </bean>
+    
+    <bean id="address2" class="package1.Address">
+        <property name="city" value="Durg"/>
+        <property name="state" value="Chhattisgarh"/>
+        <property name="country" value="India"/>
+    </bean>
+    
+	<!-- Student Bean -->
+    <!-- <bean id="student" class="package1.Student" autowire="byName"> --> <!-- Method 2 to connect address by autowire -->
+    <bean id="student" class="package1.Student" >
+        <property name="name" value="Abhay"/>
+        <!--<property name="address">  <ref bean="address1"/> </property>--> <!-- Method 1 to connect address -->
+    </bean>
+    
+    <!-- Without using bean for employee -->
+    <context:component-scan base-package="package1" />
+    
+</beans>
