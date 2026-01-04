@@ -1,0 +1,21 @@
+
+h1{
+    padding: 50px;
+}
+
+.main .link{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 20px;
+    color: black;
+    
+}
+
+.main .link:hover {
+    font-weight: 700;
+}
+
+.main Link {
+    margin: 10px;
+    margin-bottom: 20px;
+}
