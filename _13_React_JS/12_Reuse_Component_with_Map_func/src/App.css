@@ -1,0 +1,15 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.student-info {
+    border: 1px solid #ce3030;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 6px;
+    background-color: #1e5f98;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
