@@ -1,0 +1,17 @@
+Step 1 : create a folder 
+Step 2 : Open CMD/Terminal in this folder
+Step 3 : run this command " npm install json-server " 
+Step 4 : inside that folder create a file " file_name.json ". 
+            //Replace file_name according to you
+Step 5 : In the file write code like this
+            {
+                "Api_name" : [
+                    {
+                        "key" : "value",
+                        "key" : "value",
+                    },
+                    {}, {} ....
+                ]
+            }
+Step 6 : Your Api is ready then run the command " npx json-server file_name.json "
+
